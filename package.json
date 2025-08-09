@@ -1,0 +1,22 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dev-Vivek/RestAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-dev-Vivek/RestAPI/issues"
+  },
+  "homepage": "https://github.com/web-dev-Vivek/RestAPI#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
