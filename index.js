@@ -24,6 +24,22 @@ app.get("/users/:id", (req, res) => {
   return res.json(user);
 });
 
+app
+  .route("/api/users/:id")
+  .get((req, res) => {
+    const id = Number(req.params.id);
+    const user = users.find((user) => user.id === id);
+    return res.json(user);
+  })
+  .patch((req, res) => {
+    return res.json({ status: "pending" });
+  })
+  .delete((req, res) => {});
+
+app.post("/api/users", (req, res) => {
+  res.json({ status: "pending" });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
