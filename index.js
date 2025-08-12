@@ -64,6 +64,15 @@ app
   });
 
 app.post("/api/users", (req, res) => {
+  if (
+    !body ||
+    !body.first_name ||
+    !body.last_name ||
+    !body.email ||
+    !body.job_title
+  ) {
+    return res.status(400).json({ error: "Invalid user data" });
+  }
   const body = req.body;
   users.push({ ...body, id: users.length + 1 });
   fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err) => {

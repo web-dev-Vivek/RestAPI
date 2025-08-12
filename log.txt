@@ -3,3 +3,6 @@
 1754820496864: GET: /api/users/478
 1754820556899:::1: GET: /api/users/478
 1754820599859  ::1: GET: /api/users/478
+1754933944829:::1: GET: /api/users
+1754934072380:::1: POST: /api/users
+1754934095076:::1: GET: /api/users/478
